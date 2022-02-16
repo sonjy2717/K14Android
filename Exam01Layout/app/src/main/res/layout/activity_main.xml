@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶TableLayout"
+        android:textSize="20sp"
+        android:textColor="#ff0000">
+    </TextView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#A89BFF"
+        android:stretchColumns="*">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="이름"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름을 입력하세요"
+                android:layout_span="9"/>
+        </TableRow>
+        <TableRow
+            android:gravity="right">
+            <Button android:layout_column="2" android:text="확인"/>
+            <Button android:text="취소"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶LinearLayout"
+        android:textSize="20sp"
+        android:textColor="#ff0000">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#02FF00"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="이름"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:hint="이름을 입력하세요"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#02FF00"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:layout_width="110sp"
+            android:layout_height="match_parent"
+            android:text="확인"/>
+        <Button
+            android:layout_width="110sp"
+            android:layout_height="match_parent"
+            android:text="취소"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶GridLayout"
+        android:textSize="20sp"
+        android:textColor="#ff0000">
+    </TextView>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#999999"
+        android:rowCount="3"
+        android:columnCount="4">
+        <TextView
+            android:layout_width="40dp"
+            android:text="이름"
+            android:gravity="center"/>
+        <EditText
+            android:layout_columnSpan="3"
+            android:hint="이름을 입력하세요"
+            android:layout_gravity="fill_horizontal"/>
+
+        <Button
+            android:layout_width="110dp"
+            android:text="확인"
+            android:layout_columnSpan="3"
+            android:layout_gravity="right"/>
+        <Button
+            android:layout_width="110dp"
+            android:text="취소"/>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶RelativeLayout"
+        android:textSize="20sp"
+        android:textColor="#ff0000">
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#778899">
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="이름"
+            android:gravity="center"
+            android:id="@+id/name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="이름을 입력하세요"
+            android:layout_toRightOf="@+id/name"/>
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="취소"
+            android:id="@+id/cancle"/>
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/cancle"
+            android:text="확인"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 내용이 출력되는 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:id="@+id/mainLayout">
+    </LinearLayout>
+
+    <!-- 버튼을 통한 탭메뉴 출력 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#ffff16">
+        <!-- XML을 통해 프레그먼트 삽입 -->
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/topFragment"
+            class="com.kosmo.a31fragmentlistview.BottomMenu"/>
+    </LinearLayout>
+
+</LinearLayout>

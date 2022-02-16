@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A17WebView</string>
+    <!-- 웹뷰에서 접속할 웹 URL을 설정 -->
+    <string name="web_url">http://nakja.co.kr/kosmoWebView/index.html</string>
+</resources>

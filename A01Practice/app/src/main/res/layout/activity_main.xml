@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="지현이는 바보당..!!"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지현이는 바보래용"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal_700">
+    </Button>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이지현 바보"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:id="@+id/web">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#383039"
+        android:text="지현이 바보"></Button>
+
+    <Button
+        android:id="@+id/btnFool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#D085DA"
+        android:padding="30sp"
+        android:text="바보 지현이 월드"
+        android:textSize="20sp"></Button>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="myBtnClick"
+        android:text="후후후후" />
+
+</LinearLayout>

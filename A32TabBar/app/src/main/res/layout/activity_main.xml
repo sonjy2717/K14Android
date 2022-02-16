@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!--
+    각 탭의 화면을 출력할 프레임 레이아웃
+    하단의 탭메뉴를 출력해야 하므로 높이는 가중치를 통해 설정한다.
+    -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/container">
+    </FrameLayout>
+
+    <!--
+    하단의 탭메뉴를 구성한다. 배경색과 선택했을때의 컬러를 지정한다.
+    -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabSelectedTextColor="#FFFFFF">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="첫번째"
+            android:icon="@android:drawable/stat_sys_phone_call_forward"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="두번째"
+            android:icon="@android:drawable/stat_sys_data_bluetooth"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세번째"
+            android:icon="@android:drawable/stat_sys_warning"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="네번째"
+            android:icon="@android:drawable/stat_sys_download"/>
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>

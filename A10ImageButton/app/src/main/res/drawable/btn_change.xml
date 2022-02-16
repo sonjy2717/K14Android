@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 클릭했을때 -->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/btn_on"/>
+    <!-- 포커스가 왔을때 -->
+    <item android:state_focused="true"
+        android:drawable="@drawable/btn_on"/>
+    <!-- 기본 상태일때 -->
+    <item android:drawable="@drawable/btn_off"/>
+</selector>

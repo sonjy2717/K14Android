@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/intro"
+        android:scaleType="fitXY"
+        android:id="@+id/imageview"/>
+    <!--
+    이미지를 뷰에 꽉 채우기 위해 scaleType에 fitXY를 적용한다.
+    그 외 가로, 혹은 세로만 맞추는 옵션값들이 존재한다.
+    -->
+
+</LinearLayout>

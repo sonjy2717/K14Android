@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <!-- 리니어 레이아웃에 orientation속성이 없으면 horizontal이 된다. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 체크박스 -->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_pol"
+            android:text="정치"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_eco"
+            android:text="경제"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_ent"
+            android:text="연예"
+            android:checked="true"/><!--check된 상태로 변경-->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_spo"
+            android:text="스포츠"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 라디오 버튼은 라디오 그룹으로 묶어줘야 하나의 그룹이 된다. -->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radiogroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_male"
+                android:text="남성"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_female"
+                android:text="여성"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_trans"
+                android:text="트랜스젠더"/>
+        </RadioGroup>
+    </LinearLayout>
+    <!--
+    토글버튼 : 버튼을 누를때마다 textOff/textOn에서 지정한 글씨로 변경됨.
+    -->
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="토글버튼(표시안됨)"
+        android:textOff="토글버튼OFF"
+        android:textOn="토글버튼ON" />
+
+    <!-- 스위치 : textOn/textOff속성은 있으나 디자인때문에 화면에
+                표시되지는 않음. 토글버튼과 동일하게 on/off를 선택한다.-->
+    <Switch
+        android:id="@+id/switchbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="스위치"
+        android:textOff="오프(표시안됨)"
+        android:textOn="온(표시안됨)" /><!--checked속성을 통해 on/off상태를
+                                        설정할수 있음. -->
+
+    <!-- 스피너 : HTML의 select태그와 동일한 기능을 한다. 단, option부분은
+                xml에서는 설정할 수 없고, 어뎁터뷰를 통해 Java에서 설정해야한다. -->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:id="@+id/button"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textview"
+        android:background="#ffff00"
+        android:text="선택항목출력"
+        android:textSize="30dp"
+        android:textColor="#ff0000"
+        android:gravity="center"/>
+
+</LinearLayout>

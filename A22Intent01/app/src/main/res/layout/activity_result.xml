@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:rowCount="10"
+    android:columnCount="2">
+    <TextView
+        android:id="@+id/tv1"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="left|center_horizontal"/>
+    <!--
+    isIndicator : false면 클릭가능함.
+    stepSize : 별을 1개 혹은 0.5씩 선택가능함.
+    -->
+    <RatingBar
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:paddingTop="5dp"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="left|center_horizontal"/>
+    <RatingBar
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingTop="5dp"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="left|center_horizontal"/>
+    <RatingBar
+        android:id="@+id/rb3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingTop="5dp"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="left|center_horizontal"/>
+    <RatingBar
+        android:id="@+id/rb4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingTop="5dp"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="left|center_horizontal"/>
+    <RatingBar
+        android:id="@+id/rb5"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingTop="5dp"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="left|center_horizontal"/>
+    <RatingBar
+        android:id="@+id/rb6"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingTop="5dp"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="left|center_horizontal"/>
+    <RatingBar
+        android:id="@+id/rb7"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingTop="5dp"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="left|center_horizontal"/>
+    <RatingBar
+        android:id="@+id/rb8"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingTop="5dp"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="left|center_horizontal"/>
+    <RatingBar
+        android:id="@+id/rb9"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingTop="5dp"
+        android:stepSize="1" />
+    <Button
+        android:id="@+id/btn_main"
+        android:text="메인으로 돌아가기"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"/>
+</GridLayout>
